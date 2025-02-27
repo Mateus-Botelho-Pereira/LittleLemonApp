@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { useFonts } from "expo-font";
+import {
+  MarkaziText_500Medium,
+  MarkaziText_400Regular,
+} from "@expo-google-fonts/markazi-text";
+import {
+  Karla_800ExtraBold,
+  Karla_700Bold,
+  Karla_500Medium,
+  Karla_400Regular,
+} from "@expo-google-fonts/karla";
+import { Routes } from "./src/routes";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const [fontsLoaded] = useFonts({
+    MarkaziText_500Medium,
+    MarkaziText_400Regular,
+    Karla_800ExtraBold,
+    Karla_700Bold,
+    Karla_500Medium,
+    Karla_400Regular,
+  });
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  return <>{fontsLoaded && <Routes />}</>;
+}
