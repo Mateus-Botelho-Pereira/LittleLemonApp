@@ -13,6 +13,7 @@ export function Home() {
         <TouchableOpacity activeOpacity={0.5}>
           <MenuIcon />
         </TouchableOpacity>
+        <Image style={styles.logo} source={require("../../assets/logo.png")} />
         <TouchableOpacity
           activeOpacity={0.5}
           onPress={() => {

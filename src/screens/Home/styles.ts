@@ -7,6 +7,10 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "white",
   },
+  logo: {
+    height: 48,
+    width: 200,
+  },
   avatar: {
     height: 48,
     width: 48,
