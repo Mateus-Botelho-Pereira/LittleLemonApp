@@ -12,20 +12,19 @@ export function Login() {
         <Image resizeMode="center" source={require("../../assets/logo.png")} />
       </View>
       <View style={styles.inputGroup}>
-        <Text style={styles.label}>USER NAME</Text>
+        <Text style={styles.label}>Name</Text>
         <TextInput
           style={styles.input}
-          placeholder="Insert username"
+          placeholder="Insert name"
           keyboardType="default"
         />
       </View>
       <View style={styles.inputGroup}>
-        <Text style={styles.label}>PASSWORD</Text>
+        <Text style={styles.label}>Email</Text>
         <TextInput
           style={styles.input}
-          placeholder="Insert password"
+          placeholder="Insert email"
           keyboardType="default"
-          secureTextEntry
         />
       </View>
       <View style={styles.buttonGroup}>
